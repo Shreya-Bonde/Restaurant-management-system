@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Menu</title>
+    <style>
+        body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+}
+
+.menu-header {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('images/menu-bg.jpg') no-repeat center center/cover;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+}
+
+.menu-header h1 {
+    font-size: 3.5em;
+    margin: 0;
+}
+
+.menu-header p {
+    font-size: 1.5em;
+    margin-top: 10px;
+}
+
+.menu-section {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 2em;
+
+    </style>
+</head>
+<body>
+    <header class="menu-header">
+        <h1>Our Delicious Menu</h1>
+        <p>Savor the flavors of our signature dishes</p>
+    </header>
+    
+    <section class="menu-section">
+        <div class="menu-item">
+            <img src="images/pizza.jpg" alt="Pizza">
+            <div class="menu-text">
+                <h3>Margherita Pizza</h3>
+                <p>Classic cheese pizza topped with fresh basil.</p>
+                <span class="price">$9.99</span>
+            </div>
+        </div>
+       

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Menu</title>
+    
+</head>
+<style>
+    body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f8f8;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #ff6347;
+    text-align: center;
+    padding: 2em 0;
+}
+
+header h1 {
+    color: #fff;
+    font-size: 3em;
+    margin: 0;
+}
+
+.menu {
+    width: 90%;
+    margin: 2em auto;
+}
+
+.menu-category {
+    margin-bottom: 2em;
+}
+
+.menu-category h2 {
+    color: #ff6347;
+    font-size: 2em;
+    border-bottom: 2px solid #ff6347;
+    padding-bottom: 0.5em;
+}
+
+.menu-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1em;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.menu-item img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
+
+.item-details {
+    padding: 1em;
+}
+
+.item-details h3 {
+    font-size: 1.5em;
+    margin-bottom: 0.5em;
+}
+
+.item-details p {
+    font-size: 1.1em;
+    margin-bottom: 0.5em;
+}
+
+.item-details span {
+    font-weight: bold;
+    color: #ff6347;
+    font-size: 1.2em;
+}
+
+</style>
+<body>
+    <header>
+        <h1>Our Delicious Menu</h1>
+    </header>
+    
+    <section class="menu">
+        <div class="menu-category">
+            <h2>Starters</h2>
+            <div class="menu-item">
+                <img src="images/garlic-bread.jpg" alt="Garlic Bread">
+                <div class="item-details">
+                    <h3>Garlic Bread</h3>
+                    <p>Aromatic garlic bread served with butter.</p>
+                    <span>$5.99</span>
+                </div>
+            </div>
+            <!-- More menu items -->
+        </div>
+        
+        <div class="menu-category">
+            <h2>Main Course</h2>
+            <div class="menu-item">
+                <img src="images/spaghetti.jpg" alt="Spaghetti">
+                <div class="item-details">
+                    <h3>Spaghetti Carbonara</h3>
+                    <p>Classic Italian spaghetti with creamy sauce.</p>
+                    <span>$12.99</span>
+                </div>
+            </div>
+            <!-- More menu items -->
+        </div>
+    </section>
+</body>
+</html>

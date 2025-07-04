@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+    <style>
+        body {
+    font-family: 'Verdana', sans-serif;
+    background-color: #f8f8f8;
+    color: #444;
+    margin: 0;
+}
+
+header {
+    background: url('images/gallery-header.jpg') no-repeat center center/cover;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+header h1 {
+    color: #fff;
+    font-size: 3.5em;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+}
+
+.gallery-section {
+    width: 85%;
+    margin: 2em auto;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5em;
+}
+
+.gallery-item {
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gallery-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 12px 24px rgba(0,0,0,0.2);
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.gallery-item:hover img {
+    transform: scale(1.1);
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Our Restaurant Gallery</h1>
+    </header>
+
+    <section class="gallery-section">
+        <div class="gallery-grid">
+            <div class="gallery-item">
+                <img src="images/restaurant1.jpg" alt="Restaurant Interior">
+            </div>
+            <div class="gallery-item">
+                <img src="images/food1.jpg" alt="Delicious Pasta">
+            </div>
+            <div class="gallery-item">
+                <img src="images/restaurant2.jpg" alt="Ambiance">
+            </div>
+            <div class="gallery-item">
+                <img src="images/food2.jpg" alt="Gourmet Dish">
+            </div>
+            <!-- More images -->
+        </div>
+    </section>
+</body>
+</html>

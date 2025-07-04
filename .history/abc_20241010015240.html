@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .dish {
+    min-width: 300px;
+    margin: 0 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s; /* Add transition for smooth effect */
+    background-color: #fff;
+    text-align: left;
+}
+
+.dish:hover {
+    transform: scale(1.05); /* Scale up the dish slightly on hover */
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3); /* Enhance shadow on hover */
+}
+
+    </style>
+</head>
+<body>
+    
+</body>
+</html>
+<!-- Famous Dishes Section -->
+<div class="dishes-section">
+    <h2>Famous Dishes</h2>
+    <div class="dish-carousel" id="dishCarousel">
+        <div class="dish">
+            <img src="https://images.unsplash.com/photo-1543353071-6a1d788c6c0d" alt="Dish 1">
+            <h3>Spaghetti Carbonara</h3>
+            <p>A classic Italian pasta dish made with eggs, cheese, pancetta, and pepper.</p>
+        </div>
+        <div class="dish">
+            <img src="https://images.unsplash.com/photo-1562308710-6774b70a64c2" alt="Dish 2">
+            <h3>Margherita Pizza</h3>
+            <p>A simple yet delicious pizza topped with fresh mozzarella, tomatoes, and basil.</p>
+        </div>
+        <div class="dish">
+            <img src="https://images.unsplash.com/photo-1582577166146-6a8f3e9b03d6" alt="Dish 3">
+            <h3>Chicken Tikka Masala</h3>
+            <p>A popular dish of marinated chicken in a creamy tomato sauce, served with rice.</p>
+        </div>
+        <div class="dish">
+            <img src="https://images.unsplash.com/photo-1543269862-8a3e3e3b1c3d" alt="Dish 4">
+            <h3>Sushi Platter</h3>
+            <p>Freshly made sushi rolls with a variety of fillings and sauces.</p>
+        </div>
+        <div class="dish">
+            <img src="https://images.unsplash.com/photo-1524087322644-5c71675c7e25" alt="Dish 5">
+            <h3>Chocolate Lava Cake</h3>
+            <p>A rich chocolate cake with a gooey, molten center, served with vanilla ice cream.</p>
+        </div>
+    </div>
+    <div class="carousel-buttons">
+        <button class="carousel-button" id="prevBtn">&#10094;</button>
+        <button class="carousel-button" id="nextBtn">&#10095;</button>
+    </div>
+</div>

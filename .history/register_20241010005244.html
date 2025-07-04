@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservation</title>
+    <style>
+body {
+    font-family: 'Verdana', sans-serif;
+    background-color: #f0f8ff;
+    color: #444;
+}
+
+header {
+    background-color: #2e8b57;
+    text-align: center;
+    padding: 2em 0;
+}
+
+header h1 {
+    color: #fff;
+    font-size: 3em;
+}
+
+.reservation {
+    width: 50%;
+    margin: 2em auto;
+    background-color: #fff;
+    padding: 2em;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    border-radius: 10px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-size: 1.2em;
+    margin-bottom: 0.5em;
+}
+
+input {
+    padding: 0.8em;
+    margin-bottom: 1.5em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #2e8b57;
+    color: #fff;
+    padding: 1em;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #3cb371;
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Reserve a Table</h1>
+    </header>
+
+    <section class="reservation">
+        <form action="reserve.php" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="guests">Number of Guests:</label>
+            <input type="number" id="guests" name="guests" required>
+
+            <label for="date">Date:</label>
+            <input type="date" id="date" name="date" required>
+
+            <label for="time">Time:</label>
+            <input type="time" id="time" name="time" required>
+
+            <button type="submit">Reserve Now</button>
+        </form>
+    </section>
+</body>
+</html>

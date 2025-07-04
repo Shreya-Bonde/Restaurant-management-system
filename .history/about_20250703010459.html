@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Gourmet Delights</title>
+    
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #fafafa;
+    color: #333;
+}
+
+.about-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px;
+    background-color: #fff;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    max-width: 1200px;
+    margin: 50px auto;
+    border-radius: 10px;
+}
+
+.about-image img {
+    width: 500px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.about-content {
+    max-width: 600px;
+    padding-left: 50px;
+}
+
+.about-content h1 {
+    font-size: 2.5em;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.about-content p {
+    line-height: 1.8;
+    margin-bottom: 20px;
+    color: #555;
+}
+
+.about-content h2 {
+    font-size: 1.8em;
+    color: #d9534f;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+.menu-btn {
+    display: inline-block;
+    background-color: #d9534f;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: 500;
+    border-radius: 30px;
+    transition: background-color 0.3s ease;
+}
+
+.menu-btn:hover {
+    background-color: #c9302c;
+}
+
+.back-btn {
+    color: #c9302c;
+    background-color: #d9534f;
+    top: 20px;
+    left: 20px;
+    border-radius: 50%;
+}
+
+@media (max-width: 768px) {
+    .about-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-content {
+        padding: 0;
+    }
+
+    .about-image img {
+        width: 100%;
+        margin-bottom: 30px;
+        height: auto;
+    }
+}
+
+    </style>
+</head>
+<body>
+    <div class="about-container">
+        <div class="about-image">
+            <img src="./resto img.avif" alt="Restaurant View">
+        </div>
+        <div class="about-content">
+            <h1>Welcome to Gourmet Delights</h1>
+            <p>At <strong>Gourmet Delights</strong>, we bring you an exquisite fusion of modern flavors and traditional recipes. Our chefs handpick the freshest ingredients to craft each dish with passion and precision, ensuring a culinary experience like no other.</p>
+            <p>Since our inception in 2010, we have been dedicated to offering our guests a warm ambiance, exceptional service, and mouth-watering meals. Whether it's a cozy dinner with family or a special celebration, Gourmet Delights promises to make every moment unforgettable.</p>
+            <h2>Our Vision</h2>
+            <p>To be the leading destination for food lovers, where every dish tells a story, and every guest leaves with a smile.</p>
+            <!-- <a href="#famous-dishes" class="menu-btn" id="menu-link">Explore Our Menu</a> -->
+            <a href="index.html#famous-dishes" class="menu-btn" id="menu-link">Explore Our Menu</a>
+
+        </div>
+        <div>
+            <a href="index.html" class="back-btn">
+                <i class="fas fa-arrow-left"></i> 
+            </a>
+        </div>
+    </div>
+</body>
+</html>

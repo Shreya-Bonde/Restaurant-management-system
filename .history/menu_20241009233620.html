@@ -1,0 +1,126 @@
+<!-- menu.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Menu</title>
+</head>
+<style>
+    /* menu.css */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #c0392b;
+  padding: 20px;
+  text-align: center;
+  color: #fff;
+}
+
+header h1 {
+  font-size: 2.5rem;
+}
+
+header p {
+  font-style: italic;
+  margin-top: -10px;
+}
+
+.menu {
+  margin: 20px auto;
+  max-width: 1000px;
+}
+
+.menu-category {
+  margin-bottom: 40px;
+}
+
+.menu-category h2 {
+  font-size: 2rem;
+  color: #c0392b;
+  margin-bottom: 15px;
+}
+
+.menu-item {
+  display: flex;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  padding: 10px;
+  overflow: hidden;
+}
+
+.menu-item img {
+  width: 150px;
+  height: 100px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.item-details {
+  margin-left: 15px;
+}
+
+.item-details h3 {
+  font-size: 1.5rem;
+  margin: 0;
+}
+
+.item-details p {
+  color: #7f8c8d;
+}
+
+.item-details span {
+  color: #c0392b;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+</style>
+<body>
+  <header>
+    <h1>Our Menu</h1>
+    <p>Delicious, Fresh, and Made with Love</p>
+  </header>
+  
+  <section class="menu">
+    <div class="menu-category">
+      <h2>Starters</h2>
+      <div class="menu-item">
+        <img src="starter.jpg" alt="Garlic Bread">
+        <div class="item-details">
+          <h3>Garlic Bread</h3>
+          <p>Aromatic garlic bread served with butter</p>
+          <span>$5.99</span>
+        </div>
+      </div>
+      <div class="menu-item">
+        <img src="starter2.jpg" alt="Bruschetta">
+        <div class="item-details">
+          <h3>Bruschetta</h3>
+          <p>Crispy toasted bread topped with tomatoes and basil</p>
+          <span>$7.99</span>
+        </div>
+      </div>
+      <!-- More items -->
+    </div>
+
+    <div class="menu-category">
+      <h2>Main Course</h2>
+      <!-- Main Course items similar to starters -->
+    </div>
+    
+    <div class="menu-category">
+      <h2>Desserts</h2>
+      <!-- Dessert items -->
+    </div>
+  </section>
+</body>
+</html>
